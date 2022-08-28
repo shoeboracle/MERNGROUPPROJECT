@@ -1,0 +1,74 @@
+<h3>RENDEZVOUS KITCHEN</h3>
+<style>
+
+body {
+  background-image: url('4.jpg');
+  background-repeat: no-repeat;
+   
+  background-size: 100% 140%;;
+}
+h3{
+
+ color: black;
+  font-family: Lucida Handwriting;
+  font-size: 50px;
+   padding-left: 200px;
+   padding-bottom: 150px;
+
+}
+
+
+label {
+  
+   
+  color: white;
+  font-family: Georgia;
+  font-size: 30px;
+  padding-top: 100px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  
+}
+input {
+ 
+   font-family: Georgia;
+  font-size: 20px;
+
+}
+
+
+</style>
+
+
+<script>
+
+
+function lw()
+{
+y=document.getElementById("d3");
+
+z=document.getElementById("d4");
+
+
+
+if(y.value=="SHOEB"&&z.value=="DEEPTHI")
+{
+alert("login succesfull");
+alert("now you can access RENDEZVOUS KITCHEN");
+document.location="index.html";
+}
+else
+{
+alert("username or password not found");
+}
+}
+</script>
+<label for="d3" >   Enter Username :</label>
+<input id="d3" name="d3"/>
+<br />
+<label for="d3"  >Enter Password   :  </label>
+<input type="password" id="d4" />
+<br />
+
+<button onclick=lw()>         login </button>
